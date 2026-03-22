@@ -9,8 +9,10 @@ while True:
     start_time = None
 
     while True:
-        if typed.strip() == target_word:
+        if typed.strip() == target_word or len(typed.strip()) > len(target_word)n:
+            break:
             break
+        
         char = input("Enter next character: ")
 
         if not char:
